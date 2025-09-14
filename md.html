@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Markdown Viewer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css">
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#fff}
+    .container{max-width:960px;margin:0 auto;padding:24px}
+    .topbar{display:flex;gap:12px;align-items:center;padding:12px 16px;border-bottom:1px solid #e5e7eb;background:#f8fafc;position:sticky;top:0;z-index:10}
+    .topbar a{color:#2563eb;text-decoration:none}
+    .markdown-body{box-sizing:border-box;min-width:200px;max-width:100%;margin:0 auto;padding:24px}
+    @media (max-width: 767px){.markdown-body{padding:16px}}
+    .error{background:#fef2f2;border:1px solid #fecaca;color:#7f1d1d;padding:12px;border-radius:8px}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <a href="./">← Docs</a>
+    <span id="filename" style="color:#64748b"></span>
+  </div>
+  <div class="container">
+    <article id="content" class="markdown-body">
+      <p>Lade Inhalt…</p>
+    </article>
+  </div>
+
+  <!-- Load libraries BEFORE using them -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/common.min.js"></script>
+  <script>
+    (function(){
+      const params = new URLSearchParams(location.search);
+      const path = params.get('path');
+      const contentEl = document.getElementById('content');
+      const nameEl = document.getElementById('filename');
+
+      if(!path){
+        contentEl.innerHTML = '<div class="error">Kein Pfad angegeben. Nutze z.B. <code>md.html?path=adr/0001-llm-gateway-provider-agnostisch.md</code></div>';
+        return;
+      }
+
+      // rudimentäre Sicherheit: nur innerhalb docs/
+      if(path.includes('..')){
+        contentEl.innerHTML = '<div class="error">Ungültiger Pfad.</div>';
+        return;
+      }
+
+      nameEl.textContent = path;
+
+      fetch(path)
+        .then(r => { if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
+        .then(md => {
+          // Entferne YAML-Frontmatter rein visuell
+          md = md.replace(/^---[\s\S]*?---\n/,'')
+          // Configure marked + highlight.js
+          if (window.marked) {
+            window.marked.setOptions({
+              highlight: function(code, lang){
+                try {
+                  if (lang && hljs.getLanguage(lang)) {
+                    return hljs.highlight(code, {language: lang}).value;
+                  }
+                } catch (e) {}
+                return hljs.highlightAuto(code).value;
+              }
+            });
+            const html = window.marked.parse(md);
+            contentEl.innerHTML = html;
+            // Überschrift als Titel setzen
+            const h1 = contentEl.querySelector('h1');
+            if(h1){ document.title = h1.textContent + ' – Docs'; }
+          } else {
+            throw new Error('marked library not loaded');
+          }
+        })
+        .catch(err => {
+          contentEl.innerHTML = '<div class="error">Fehler beim Laden: '+ (err && err.message ? err.message : err) +'</div>';
+        });
+    })();
+  </script>
+</body>
+</html>

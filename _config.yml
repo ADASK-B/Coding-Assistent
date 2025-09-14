@@ -1,0 +1,24 @@
+theme: minima
+title: Professional Documentation Template
+description: Modern, responsive documentation website template for technical projects
+url: ""  # Update with your GitHub Pages URL
+baseurl: ""  # Update with your repository name if needed
+
+# SEO settings
+author: Your Name
+twitter:
+  username: yourusername
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
