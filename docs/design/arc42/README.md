@@ -27,10 +27,10 @@ This document will contain comprehensive system documentation following the arc4
 
 Until this arc42 documentation is complete, please refer to:
 
-- **[C4 Architecture Diagrams](../architecture.html)** - Visual system overview
+- **[C4 Architecture Diagrams](#)** - Visual system overview (Coming Soon)
 - **[Architecture Decision Records (ADRs)](../adr/)** - Key technical decisions
-- **[Project Goals & Vision](../goal.md)** - Strategic objectives
-- **[System README](../../README.md)** - Technical implementation details
+- **[Project Goals & Vision](goal.md)** - Strategic objectives
+- **[System README](../README.md)** - Technical implementation details
 
 ### 📝 Contributing
 
