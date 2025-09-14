@@ -1,296 +1,755 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html><!DOCTYPE html>
+
 <html lang="en">
-<head>
+
+<head><html lang="en"><html lang="en">
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Professional Documentation Template">
-    <title>📚 Professional Documentation Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><head><head>
+
+    <meta name="title" content="AI Code Agent - Platform Evolution">
+
+    <title>🎯 AI Code Agent - Platform Evolution</title>    <meta charset="UTF-8">    <meta charset="UTF-8">
+
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         
-        body {
+
+        body {    <meta name="title" content="AI Code Agent - Platform Evolution">    <meta name="title" content="Professional Documentation Template">
+
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f8f9fa;
+
+            background: #f8f9fa;    <title>🎯 AI Code Agent - Platform Evolution</title>    <title>📚 Professional Documentation Template</title>
+
             min-height: 100vh;
-            color: #333;
+
+            color: #333;    <style>    <style>
+
             line-height: 1.6;
-        }
+
+        }        * { margin: 0; padding: 0; box-sizing: border-box; }        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         
-        .header {
+
+        .header {                
+
             background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
-            color: white;
+
+            color: white;        body {        body {
+
             padding: 2rem;
-            text-align: center;
+
+            text-align: center;            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
         }
-        
+
+                    background: #f8f9fa;            background: #f8f9fa;
+
         .header h1 {
-            font-size: 2.5rem;
+
+            font-size: 2.5rem;            min-height: 100vh;            min-height: 100vh;
+
             margin-bottom: 0.5rem;
-            font-weight: 600;
+
+            font-weight: 600;            color: #333;            color: #333;
+
         }
-        
+
+                    line-height: 1.6;            line-height: 1.6;
+
         .header p {
-            font-size: 1.1rem;
+
+            font-size: 1.1rem;        }        }
+
             opacity: 0.9;
-            max-width: 600px;
+
+            max-width: 600px;                
+
             margin: 0 auto;
-        }
+
+        }        .header {        .header {
+
         
-        .nav-breadcrumb {
-            background: white;
-            padding: 1rem 2rem;
-            font-size: 0.9rem;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        
-        .nav-breadcrumb a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        
-        .nav-breadcrumb a:hover {
-            text-decoration: underline;
-        }
-        
-        .container {
+
+        .container {            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+
             max-width: 1200px;
-            margin: 0 auto;
+
+            margin: 0 auto;            color: white;            color: white;
+
             padding: 2rem;
-        }
+
+        }            padding: 2rem;            padding: 2rem;
+
         
-        .section {
+
+        .section {            text-align: center;            text-align: center;
+
             background: white;
-            margin: 1.5rem 0;
+
+            margin: 1.5rem 0;        }        }
+
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);                
+
             overflow: hidden;
-        }
+
+        }        .header h1 {        .header h1 {
+
         
-        .section-header {
+
+        .section-header {            font-size: 2.5rem;            font-size: 2.5rem;
+
             background: #34495e;
-            color: white;
+
+            color: white;            margin-bottom: 0.5rem;            margin-bottom: 0.5rem;
+
             padding: 1rem 1.5rem;
-            font-size: 1.2rem;
+
+            font-size: 1.2rem;            font-weight: 600;            font-weight: 600;
+
             font-weight: 500;
-        }
+
+        }        }        }
+
         
-        .section-content {
+
+        .section-content {                
+
             padding: 1.5rem;
-        }
+
+        }        .header p {        .header p {
+
         
-        .demo-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 6px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-        
-        .demo-box h4 {
-            color: #2c3e50;
-            margin-bottom: 0.5rem;
-        }
-        
-        .demo-code {
-            background: #2c3e50;
-            color: #ecf0f1;
-            padding: 1rem;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
-            font-size: 0.9rem;
-            margin: 0.5rem 0;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 1rem 0;
-        }
-        
-        .card {
-            border: 1px solid #e0e0e0;
-            border-radius: 6px;
-            padding: 1.5rem;
-            transition: all 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            border-color: #3498db;
-        }
-        
-        .card h4 {
-            color: #2c3e50;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-        
-        .card p {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-        
-        .btn {
+
+        .btn {            font-size: 1.1rem;            font-size: 1.1rem;
+
             display: inline-block;
-            background: #3498db;
+
+            background: #3498db;            opacity: 0.9;            opacity: 0.9;
+
             color: white;
-            padding: 0.6rem 1.2rem;
+
+            padding: 0.6rem 1.2rem;            max-width: 600px;            max-width: 600px;
+
             text-decoration: none;
-            border-radius: 4px;
+
+            border-radius: 4px;            margin: 0 auto;            margin: 0 auto;
+
             font-size: 0.9rem;
-            font-weight: 500;
+
+            font-weight: 500;        }        }
+
             transition: all 0.3s ease;
-        }
+
+        }                
+
         
-        .btn:hover {
+
+        .btn:hover {        .nav-breadcrumb {        .nav-breadcrumb {
+
             background: #2980b9;
-            transform: translateY(-1px);
+
+            transform: translateY(-1px);            background: white;            background: white;
+
         }
-        
-        .btn-secondary {
-            background: #95a5a6;
-            margin-left: 0.5rem;
-        }
-        
-        .btn-secondary:hover {
-            background: #7f8c8d;
-        }
-        
-        .status-badge {
-            display: inline-block;
-            padding: 0.3rem 0.8rem;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-left: 0.5rem;
-        }
-        
-        .status-complete { background: #d4edda; color: #155724; }
-        .status-wip { background: #fff3cd; color: #856404; }
-        .status-planned { background: #e2e3e5; color: #495057; }
-        .status-missing { background: #f8d7da; color: #721c24; }
-        
-        .warning-box {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            border-radius: 6px;
-            padding: 1rem;
-            margin: 1rem 0;
-        }
-        
-        .warning-box h4 {
-            color: #856404;
-            margin-bottom: 0.5rem;
-        }
-        
-        .architecture-flow {
-            background: #f8f9fa;
-            border-radius: 6px;
-            padding: 1rem;
-            margin: 1rem 0;
+
+                    padding: 1rem 2rem;            padding: 1rem 2rem;
+
+        .goals-highlight {
+
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);            font-size: 0.9rem;            font-size: 0.9rem;
+
+            color: white;
+
+            padding: 2rem;            border-bottom: 1px solid #e0e0e0;            border-bottom: 1px solid #e0e0e0;
+
+            border-radius: 8px;
+
+            margin: 2rem 0;        }        }
+
             text-align: center;
-            font-family: monospace;
-            font-size: 0.9rem;
-            line-height: 1.4;
-        }
+
+        }                
+
         
-        @media (max-width: 768px) {
-            .header h1 { font-size: 2rem; }
-            .grid { grid-template-columns: 1fr; }
-            .container { padding: 1rem; }
+
+        .goals-highlight h3 {        .nav-breadcrumb a {        .nav-breadcrumb a {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 1rem;            color: #3498db;            color: #3498db;
+
         }
-    </style>
+
+    </style>            text-decoration: none;            text-decoration: none;
+
 </head>
-<body>
+
+<body>        }        }
+
     <div class="header">
-        <h1>📚 Documentation Template</h1>
-        <p>Professional documentation website template for technical projects and APIs</p>
-    </div>
-    
-    <div class="nav-breadcrumb">
-        <a href="/">🏠 Repository Home</a> → 📚 Documentation Template
-    </div>
 
-    <div class="container">
+        <h1>🎯 AI Code Agent</h1>                
+
+        <p>Platform Evolution & Strategic Goals</p>
+
+    </div>        .nav-breadcrumb a:hover {        .nav-breadcrumb a:hover {
+
+
+
+    <div class="container">            text-decoration: underline;            text-decoration: underline;
+
         
+
+        <!-- Goals Highlight -->        }        }
+
+        <div class="goals-highlight">
+
+            <h3>🚀 Vision: Von PR-Automation zu einer erweiterbaren KI-Plattform</h3>                
+
+            <p>Transforming AI Code Generation from simple PR automation to a comprehensive, extensible platform for enterprise development workflows.</p>
+
+            <a href="md.html?path=design/goal.md" class="btn" style="background: rgba(255,255,255,0.2); margin-top: 1rem;">📖 Read Full Strategy →</a>        .container {        .container {
+
+        </div>
+
+            max-width: 1200px;            max-width: 1200px;
+
         <!-- What it does -->
-        <div class="section">
-            <div class="section-header">🎯 What does this tool do?</div>
-            <div class="section-content">
+
+        <div class="section">            margin: 0 auto;            margin: 0 auto;
+
+            <div class="section-header">🎯 Current Platform Status</div>
+
+            <div class="section-content">            padding: 2rem;            padding: 2rem;
+
                 <p><strong>AI Code Agent</strong> is a developer tool that responds to natural language comments in Azure DevOps Pull Requests and automatically creates code variants as separate Draft Pull Requests.</p>
-                
-                <div class="demo-box">
-                    <h4>📝 Simple Usage:</h4>
-                    <div class="demo-code">@YourUsername /edit /2 Add error handling to the login function</div>
-                    <p><strong>↓ The system automatically creates:</strong></p>
+
+                        }        }
+
+                <div style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 6px; padding: 1.5rem; margin: 1rem 0;">
+
+                    <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">📝 Current Capabilities:</h4>                
+
                     <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
-                        <li>🔀 2 separate feature branches with different implementations</li>
-                        <li>📝 AI-generated code changes applied to your existing code</li>
-                        <li>🔄 Draft Pull Requests you can review and merge</li>
-                        <li>💬 Status updates posted back to your original PR</li>
+
+                        <li>🔀 Multi-variant code generation from PR comments</li>        .section {        .section {
+
+                        <li>📝 AI-powered code analysis and modification</li>
+
+                        <li>🔄 Automated Draft Pull Request creation</li>            background: white;            background: white;
+
+                        <li>💬 Intelligent webhook processing</li>
+
+                        <li>🏗️ Microservices architecture with monitoring</li>            margin: 1.5rem 0;            margin: 1.5rem 0;
+
                     </ul>
-                </div>
-                
-                <div class="architecture-flow">
-                    Azure DevOps PR Comment → Webhook → AI Analysis → Code Generation → New Draft PRs
-                </div>
-            </div>
-        </div>
 
-        <!-- System Architecture -->
-        <div class="section">
-            <div class="section-header">🏗️ System Architecture</div>
-            <div class="section-content">
-                <p>Production-ready microservices architecture with observability and monitoring.</p>
-                
-                <div class="grid">
-                    <div class="card">
-                        <h4>Core Services (8)</h4>
-                        <span class="status-badge status-complete">Running</span>
-                        <p>Gateway, Orchestrator, Adapter, LLM-Patch, Traefik, ngrok, Ollama, Azurite</p>
-                        <a href="README.html#-complete-service-overview" class="btn">View Details →</a>
-                    </div>
-                    
-                    <div class="card">
-                        <h4>Monitoring Stack (8)</h4>
-                        <span class="status-badge status-complete">Running</span>
-                        <p>Grafana, Prometheus, Loki, Alertmanager, cAdvisor, Node Exporter, Health Monitor</p>
-                        <a href="README.html#-service-health--monitoring" class="btn">Health Dashboard →</a>
-                    </div>
-                </div>
-                
-                <div class="demo-box">
-                    <h4>🚀 One-Command Deployment:</h4>
-                    <div class="demo-code">docker-compose -f docker-compose.full.yml up -d --build</div>
-                    <p>Starts all 16 services with monitoring, health checks, and AI models.</p>
-                </div>
-            </div>
-        </div>
+                </div>            border-radius: 8px;            border-radius: 8px;
 
-        <!-- Getting Started -->
+            </div>
+
+        </div>            box-shadow: 0 2px 10px rgba(0,0,0,0.08);            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+
+
+        <!-- Documentation -->            overflow: hidden;            overflow: hidden;
+
         <div class="section">
-            <div class="section-header">🚀 Getting Started</div>
+
+            <div class="section-header">📚 Goals Documentation</div>        }        }
+
             <div class="section-content">
-                <div class="grid">
+
+                <div style="border: 1px solid #e0e0e0; border-radius: 6px; padding: 1.5rem;">                
+
+                    <h4 style="color: #2c3e50; margin-bottom: 0.5rem; font-size: 1.1rem;">📋 Complete Strategic Roadmap</h4>
+
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">Detailed platform evolution strategy, technical objectives, and implementation roadmap for transforming the AI Code Agent into an enterprise-ready platform.</p>        .section-header {        .section-header {
+
+                    <a href="md.html?path=design/goal.md" class="btn">📖 Read Goals Document →</a>
+
+                </div>            background: #34495e;            background: #34495e;
+
+                
+
+                <div style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 6px; padding: 1.5rem; margin-top: 1.5rem;">            color: white;            color: white;
+
+                    <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">📝 Quick Access:</h4>
+
+                    <p>The goals document covers vision, technical strategy, quality frameworks, platform architecture, and detailed implementation phases.</p>            padding: 1rem 1.5rem;            padding: 1rem 1.5rem;
+
+                    <a href="goal/" class="btn" style="background: #95a5a6;">🔗 Alternative Access →</a>
+
+                </div>            font-size: 1.2rem;            font-size: 1.2rem;
+
+            </div>
+
+        </div>            font-weight: 500;            font-weight: 500;
+
+
+
+        <!-- Development Focus -->        }        }
+
+        <div class="section">
+
+            <div class="section-header">🚀 Current Development Focus</div>                
+
+            <div class="section-content">
+
+                <p>Starting with the strategic foundation outlined in our goals document, we're building towards a comprehensive AI development platform.</p>        .section-content {        .section-content {
+
+                
+
+                <div style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 6px; padding: 1.5rem; margin: 1rem 0;">            padding: 1.5rem;            padding: 1.5rem;
+
+                    <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">🎯 Key Focus Areas:</h4>
+
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">        }        }
+
+                        <li><strong>Quality & Evaluation:</strong> Golden tests, provider comparisons, automated quality gates</li>
+
+                        <li><strong>Platform Extensibility:</strong> Plugin architecture, custom workflows, integration APIs</li>                
+
+                        <li><strong>Enterprise Features:</strong> Multi-tenancy, advanced security, compliance reporting</li>
+
+                        <li><strong>Developer Experience:</strong> Enhanced UI, real-time collaboration, advanced analytics</li>        .demo-box {        .demo-box {
+
+                    </ul>
+
+                </div>            background: #f8f9fa;            background: #f8f9fa;
+
+            </div>
+
+        </div>            border: 1px solid #e9ecef;            border: 1px solid #e9ecef;
+
+    </div>
+
+</body>            border-radius: 6px;            border-radius: 6px;
+
+</html>
+            padding: 1.5rem;            padding: 1.5rem;
+
+            margin: 1rem 0;            margin: 1rem 0;
+
+        }        }
+
+                
+
+        .demo-box h4 {        .demo-box h4 {
+
+            color: #2c3e50;            color: #2c3e50;
+
+            margin-bottom: 0.5rem;            margin-bottom: 0.5rem;
+
+        }        }
+
+                
+
+        .grid {        .demo-code {
+
+            display: grid;            background: #2c3e50;
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));            color: #ecf0f1;
+
+            gap: 1.5rem;            padding: 1rem;
+
+            margin: 1rem 0;            border-radius: 4px;
+
+        }            font-family: 'Courier New', monospace;
+
+                    font-size: 0.9rem;
+
+        .card {            margin: 0.5rem 0;
+
+            border: 1px solid #e0e0e0;        }
+
+            border-radius: 6px;        
+
+            padding: 1.5rem;        .grid {
+
+            transition: all 0.3s ease;            display: grid;
+
+        }            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+                    gap: 1.5rem;
+
+        .card:hover {            margin: 1rem 0;
+
+            transform: translateY(-2px);        }
+
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);        
+
+            border-color: #3498db;        .card {
+
+        }            border: 1px solid #e0e0e0;
+
+                    border-radius: 6px;
+
+        .card h4 {            padding: 1.5rem;
+
+            color: #2c3e50;            transition: all 0.3s ease;
+
+            margin-bottom: 0.5rem;        }
+
+            font-size: 1.1rem;        
+
+        }        .card:hover {
+
+                    transform: translateY(-2px);
+
+        .card p {            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+            color: #666;            border-color: #3498db;
+
+            font-size: 0.9rem;        }
+
+            margin-bottom: 1rem;        
+
+        }        .card h4 {
+
+                    color: #2c3e50;
+
+        .btn {            margin-bottom: 0.5rem;
+
+            display: inline-block;            font-size: 1.1rem;
+
+            background: #3498db;        }
+
+            color: white;        
+
+            padding: 0.6rem 1.2rem;        .card p {
+
+            text-decoration: none;            color: #666;
+
+            border-radius: 4px;            font-size: 0.9rem;
+
+            font-size: 0.9rem;            margin-bottom: 1rem;
+
+            font-weight: 500;        }
+
+            transition: all 0.3s ease;        
+
+        }        .btn {
+
+                    display: inline-block;
+
+        .btn:hover {            background: #3498db;
+
+            background: #2980b9;            color: white;
+
+            transform: translateY(-1px);            padding: 0.6rem 1.2rem;
+
+        }            text-decoration: none;
+
+                    border-radius: 4px;
+
+        .status-badge {            font-size: 0.9rem;
+
+            display: inline-block;            font-weight: 500;
+
+            padding: 0.3rem 0.8rem;            transition: all 0.3s ease;
+
+            border-radius: 12px;        }
+
+            font-size: 0.8rem;        
+
+            font-weight: 600;        .btn:hover {
+
+            margin-left: 0.5rem;            background: #2980b9;
+
+        }            transform: translateY(-1px);
+
+                }
+
+        .status-complete { background: #d4edda; color: #155724; }        
+
+        .status-wip { background: #fff3cd; color: #856404; }        .btn-secondary {
+
+        .status-planned { background: #e2e3e5; color: #495057; }            background: #95a5a6;
+
+                    margin-left: 0.5rem;
+
+        .goals-highlight {        }
+
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);        
+
+            color: white;        .btn-secondary:hover {
+
+            padding: 2rem;            background: #7f8c8d;
+
+            border-radius: 8px;        }
+
+            margin: 2rem 0;        
+
+            text-align: center;        .status-badge {
+
+        }            display: inline-block;
+
+                    padding: 0.3rem 0.8rem;
+
+        .goals-highlight h3 {            border-radius: 12px;
+
+            font-size: 1.5rem;            font-size: 0.8rem;
+
+            margin-bottom: 1rem;            font-weight: 600;
+
+        }            margin-left: 0.5rem;
+
+                }
+
+        @media (max-width: 768px) {        
+
+            .header h1 { font-size: 2rem; }        .status-complete { background: #d4edda; color: #155724; }
+
+            .grid { grid-template-columns: 1fr; }        .status-wip { background: #fff3cd; color: #856404; }
+
+            .container { padding: 1rem; }        .status-planned { background: #e2e3e5; color: #495057; }
+
+        }        .status-missing { background: #f8d7da; color: #721c24; }
+
+    </style>        
+
+</head>        .warning-box {
+
+<body>            background: #fff3cd;
+
+    <div class="header">            border: 1px solid #ffeaa7;
+
+        <h1>🎯 AI Code Agent</h1>            border-radius: 6px;
+
+        <p>Platform Evolution & Strategic Goals</p>            padding: 1rem;
+
+    </div>            margin: 1rem 0;
+
+            }
+
+    <div class="nav-breadcrumb">        
+
+        <a href="/">🏠 Repository Home</a> → 🎯 Platform Goals        .warning-box h4 {
+
+    </div>            color: #856404;
+
+            margin-bottom: 0.5rem;
+
+    <div class="container">        }
+
+                
+
+        <!-- Goals Highlight -->        .architecture-flow {
+
+        <div class="goals-highlight">            background: #f8f9fa;
+
+            <h3>🚀 Vision: Von PR-Automation zu einer erweiterbaren KI-Plattform</h3>            border-radius: 6px;
+
+            <p>Transforming AI Code Generation from simple PR automation to a comprehensive, extensible platform for enterprise development workflows.</p>            padding: 1rem;
+
+            <a href="md.html?path=design/goal.md" class="btn" style="background: rgba(255,255,255,0.2); margin-top: 1rem;">📖 Read Full Strategy →</a>            margin: 1rem 0;
+
+        </div>            text-align: center;
+
+            font-family: monospace;
+
+        <!-- What it does -->            font-size: 0.9rem;
+
+        <div class="section">            line-height: 1.4;
+
+            <div class="section-header">🎯 Current Platform Status</div>        }
+
+            <div class="section-content">        
+
+                <p><strong>AI Code Agent</strong> is a developer tool that responds to natural language comments in Azure DevOps Pull Requests and automatically creates code variants as separate Draft Pull Requests.</p>        @media (max-width: 768px) {
+
+                            .header h1 { font-size: 2rem; }
+
+                <div class="demo-box">            .grid { grid-template-columns: 1fr; }
+
+                    <h4>📝 Current Capabilities:</h4>            .container { padding: 1rem; }
+
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">        }
+
+                        <li>🔀 Multi-variant code generation from PR comments</li>    </style>
+
+                        <li>📝 AI-powered code analysis and modification</li></head>
+
+                        <li>🔄 Automated Draft Pull Request creation</li><body>
+
+                        <li>💬 Intelligent webhook processing</li>    <div class="header">
+
+                        <li>🏗️ Microservices architecture with monitoring</li>        <h1>📚 Documentation Template</h1>
+
+                    </ul>        <p>Professional documentation website template for technical projects and APIs</p>
+
+                </div>    </div>
+
+            </div>    
+
+        </div>    <div class="nav-breadcrumb">
+
+        <a href="/">🏠 Repository Home</a> → 📚 Documentation Template
+
+        <!-- Strategic Goals -->    </div>
+
+        <div class="section">
+
+            <div class="section-header">🎯 Strategic Goals & Platform Evolution</div>    <div class="container">
+
+            <div class="section-content">        
+
+                <div class="grid">        <!-- What it does -->
+
+                    <div class="card">        <div class="section">
+
+                        <h4>Phase 1: Foundation</h4>            <div class="section-header">🎯 What does this tool do?</div>
+
+                        <span class="status-badge status-complete">Completed</span>            <div class="section-content">
+
+                        <p>Basic PR automation with AI code generation, microservices architecture, and monitoring stack.</p>                <p><strong>AI Code Agent</strong> is a developer tool that responds to natural language comments in Azure DevOps Pull Requests and automatically creates code variants as separate Draft Pull Requests.</p>
+
+                    </div>                
+
+                                    <div class="demo-box">
+
+                    <div class="card">                    <h4>📝 Simple Usage:</h4>
+
+                        <h4>Phase 2: Platform Extension</h4>                    <div class="demo-code">@YourUsername /edit /2 Add error handling to the login function</div>
+
+                        <span class="status-badge status-wip">In Planning</span>                    <p><strong>↓ The system automatically creates:</strong></p>
+
+                        <p>Multi-provider LLM support, enhanced quality frameworks, and extensible plugin architecture.</p>                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+
+                    </div>                        <li>🔀 2 separate feature branches with different implementations</li>
+
+                                            <li>📝 AI-generated code changes applied to your existing code</li>
+
+                    <div class="card">                        <li>🔄 Draft Pull Requests you can review and merge</li>
+
+                        <h4>Phase 3: Enterprise Ready</h4>                        <li>💬 Status updates posted back to your original PR</li>
+
+                        <span class="status-badge status-planned">Planned</span>                    </ul>
+
+                        <p>Multi-tenancy, advanced security, compliance frameworks, and enterprise integrations.</p>                </div>
+
+                    </div>                
+
+                </div>                <div class="architecture-flow">
+
+                                    Azure DevOps PR Comment → Webhook → AI Analysis → Code Generation → New Draft PRs
+
+                <div class="demo-box">                </div>
+
+                    <h4>🎯 Key Transformation Areas:</h4>            </div>
+
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">        </div>
+
+                        <li><strong>Quality & Evaluation:</strong> Golden tests, provider comparisons, automated quality gates</li>
+
+                        <li><strong>Platform Extensibility:</strong> Plugin architecture, custom workflows, integration APIs</li>        <!-- System Architecture -->
+
+                        <li><strong>Enterprise Features:</strong> Multi-tenancy, advanced security, compliance reporting</li>        <div class="section">
+
+                        <li><strong>Developer Experience:</strong> Enhanced UI, real-time collaboration, advanced analytics</li>            <div class="section-header">🏗️ System Architecture</div>
+
+                    </ul>            <div class="section-content">
+
+                </div>                <p>Production-ready microservices architecture with observability and monitoring.</p>
+
+            </div>                
+
+        </div>                <div class="grid">
+
                     <div class="card">
-                        <h4>Quick Setup Guide</h4>
-                        <span class="status-badge status-complete">Complete</span>
-                        <p>Environment setup, Docker deployment, Azure DevOps webhook configuration, and first test.</p>
-                        <a href="README.html#-quick-start" class="btn">Setup Guide →</a>
-                    </div>
-                    
-                    <div class="card">
-                        <h4>System Requirements</h4>
-                        <span class="status-badge status-complete">Complete</span>
-                        <p>Docker, ngrok account, Azure DevOps project. Optional: GPU for local LLM performance.</p>
-                        <a href="README.html#-system-requirements" class="btn">Requirements →</a>
-                    </div>
-                    
-                    <div class="card">
-                        <h4>Usage Examples</h4>
+
+        <!-- Documentation -->                        <h4>Core Services (8)</h4>
+
+        <div class="section">                        <span class="status-badge status-complete">Running</span>
+
+            <div class="section-header">📚 Goals Documentation</div>                        <p>Gateway, Orchestrator, Adapter, LLM-Patch, Traefik, ngrok, Ollama, Azurite</p>
+
+            <div class="section-content">                        <a href="README.html#-complete-service-overview" class="btn">View Details →</a>
+
+                <div class="card">                    </div>
+
+                    <h4>📋 Complete Strategic Roadmap</h4>                    
+
+                    <span class="status-badge status-complete">Available</span>                    <div class="card">
+
+                    <p>Detailed platform evolution strategy, technical objectives, and implementation roadmap for transforming the AI Code Agent into an enterprise-ready platform.</p>                        <h4>Monitoring Stack (8)</h4>
+
+                    <a href="md.html?path=design/goal.md" class="btn">📖 Read Goals Document →</a>                        <span class="status-badge status-complete">Running</span>
+
+                </div>                        <p>Grafana, Prometheus, Loki, Alertmanager, cAdvisor, Node Exporter, Health Monitor</p>
+
+                                        <a href="README.html#-service-health--monitoring" class="btn">Health Dashboard →</a>
+
+                <div class="demo-box" style="margin-top: 1.5rem;">                    </div>
+
+                    <h4>📝 Quick Access:</h4>                </div>
+
+                    <p>The goals document covers vision, technical strategy, quality frameworks, platform architecture, and detailed implementation phases.</p>                
+
+                    <a href="goal/" class="btn" style="background: #95a5a6;">🔗 Alternative Access →</a>                <div class="demo-box">
+
+                </div>                    <h4>🚀 One-Command Deployment:</h4>
+
+            </div>                    <div class="demo-code">docker-compose -f docker-compose.full.yml up -d --build</div>
+
+        </div>                    <p>Starts all 16 services with monitoring, health checks, and AI models.</p>
+
+                </div>
+
+        <!-- Development Focus -->            </div>
+
+        <div class="section">        </div>
+
+            <div class="section-header">🚀 Current Development Focus</div>
+
+            <div class="section-content">        <!-- Getting Started -->
+
+                <p>Starting with the strategic foundation outlined in our goals document, we're building towards a comprehensive AI development platform.</p>        <div class="section">
+
+                            <div class="section-header">🚀 Getting Started</div>
+
+                <div class="grid">            <div class="section-content">
+
+                    <div class="card">                <div class="grid">
+
+                        <h4>Quality Framework</h4>                    <div class="card">
+
+                        <span class="status-badge status-wip">Next Priority</span>                        <h4>Quick Setup Guide</h4>
+
+                        <p>Implementing comprehensive AI code quality evaluation with golden tests and provider comparisons.</p>                        <span class="status-badge status-complete">Complete</span>
+
+                    </div>                        <p>Environment setup, Docker deployment, Azure DevOps webhook configuration, and first test.</p>
+
+                                            <a href="README.html#-quick-start" class="btn">Setup Guide →</a>
+
+                    <div class="card">                    </div>
+
+                        <h4>Platform Architecture</h4>                    
+
+                        <span class="status-badge status-planned">Planned</span>                    <div class="card">
+
+                        <p>Extensible plugin system, enhanced monitoring, and advanced configuration management.</p>                        <h4>System Requirements</h4>
+
+                    </div>                        <span class="status-badge status-complete">Complete</span>
+
+                </div>                        <p>Docker, ngrok account, Azure DevOps project. Optional: GPU for local LLM performance.</p>
+
+            </div>                        <a href="README.html#-system-requirements" class="btn">Requirements →</a>
+
+        </div>                    </div>
+
+    </div>                    
+
+</body>                    <div class="card">
+
+</html>                        <h4>Usage Examples</h4>
                         <span class="status-badge status-complete">Complete</span>
                         <p>Real examples of PR comments and the code changes they generate.</p>
                         <a href="README.html#-usage-examples" class="btn">Examples →</a>
