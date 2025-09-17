@@ -1,0 +1,26 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
+```mermaid
+C4Context
+    title AI Code Agent Platform - System Context
+    Enterprise_Boundary(platform, "AI Code Agent Platform") {
+        Person(dev, "Developer", "Verwendet Automationsworkflows")
+        Person(tenantOwner, "Tenant Owner", "Verwaltet Mandanteneinstellungen")
+        Person(sre, "Platform Operations", "Gew?hrleistet Stabilit?t")
+        System(gateway, "Agent Gateway", "HTTP/gRPC Zugriff, Auth, Rate Limits")
+        System_Ext(ado, "Azure DevOps", "Boards, Repos, Pipelines")
+        System_Ext(llm, "LLM Provider", "Azure OpenAI, Anthropic, vLLM")
+        System_Ext(obs, "Observability Stack", "Grafana, Prometheus, Alertmanager")
+    }
+    Rel(dev, gateway, "Ruft", "OAuth2")
+    Rel(tenantOwner, gateway, "Konfiguriert")
+    Rel(sre, obs, "?berwacht")
+    Rel(gateway, ado, "Service Hooks", "HMAC")
+    Rel(gateway, llm, "Prompt/Inference", "mTLS")
+    Rel(gateway, obs, "Metrics/Logs")
+```

@@ -1,3 +1,10 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
 # Data Layer
 
 ## Zweck & Scope
@@ -43,3 +50,4 @@ Daten werden ueber Data Access Layer (DAL) und Services angesprochen. Neon nutzt
 - [Neon Postgres](md.html?path=data/neon.md)
 - [Disaster Recovery](md.html?path=dr/dr.md)
 - [Compliance Framework](md.html?path=compliance/compliance.md)
+

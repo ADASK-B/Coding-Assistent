@@ -1,3 +1,10 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
 # Redis Cluster
 
 ## Zweck & Scope
@@ -43,3 +50,4 @@ Cluster nutzt drei Shards mit Replica pro Shard. NodeSelectors stellen sicher, d
 - [Neon Postgres](md.html?path=data/neon.md)
 - [Disaster Recovery](md.html?path=dr/dr.md)
 - [Monitoring & Observability](md.html?path=monitoring/monitoring.md)
+

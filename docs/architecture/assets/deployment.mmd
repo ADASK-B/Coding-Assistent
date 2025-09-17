@@ -1,0 +1,34 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
+```mermaid
+C4Deployment
+    title AI Code Agent Platform - Deployment View
+    Deployment_Node(azure, "Azure Subscription") {
+        Deployment_Node(aks, "AKS Cluster", "Kubernetes") {
+            Deployment_Node(namespaceCore, "Namespace: core") {
+                Container_Instance(gateway, "Gateway")
+                Container_Instance(orchestrator, "Orchestrator")
+                Container_Instance(adapter, "Integration Services")
+            }
+            Deployment_Node(namespaceObs, "Namespace: observability") {
+                Container_Instance(prom, "Prometheus")
+                Container_Instance(grafana, "Grafana")
+                Container_Instance(loki, "Loki")
+                Container_Instance(alertmanager, "Alertmanager")
+            }
+            Deployment_Node(namespaceTenant, "Namespace: tenants (per tenant)") {
+                Container_Instance(agentRunner, "Agent Runner Pods")
+            }
+        }
+        Deployment_Node(data, "Managed Services") {
+            Container_Instance(neon, "Neon Postgres")
+            Container_Instance(redis, "Redis Cluster")
+            Container_Instance(qdrant, "Qdrant Vector DB")
+        }
+    }
+```

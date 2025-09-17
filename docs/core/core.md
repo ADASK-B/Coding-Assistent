@@ -1,3 +1,10 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
 # Core Plattformdienste
 
 ## Zweck & Scope
@@ -45,3 +52,4 @@ Traefik terminiert TLS, delegiert an Gateway. Gateway validiert Auth, orchestrie
 - [Monitoring & Observability](md.html?path=monitoring/monitoring.md)
 - [Security Framework](md.html?path=security/security.md)
 - [SLO Framework](md.html?path=slo/slo.md)
+

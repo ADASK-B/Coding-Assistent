@@ -1,3 +1,10 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
 # Neon Postgres
 
 ## Zweck & Scope
@@ -43,3 +50,4 @@ Compute/Storage separation von Neon, Multi-Branch Setup fuer Dev/Stage/Prod. Con
 - [Redis Cluster](md.html?path=data/redis.md)
 - [Compliance Framework](md.html?path=compliance/compliance.md)
 - [Disaster Recovery](md.html?path=dr/dr.md)
+

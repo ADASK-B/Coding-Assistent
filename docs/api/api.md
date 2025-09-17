@@ -1,3 +1,10 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
 # Plattform APIs
 
 ## Zweck & Scope
@@ -43,3 +50,4 @@ APIs hinter Traefik Ingress, WAF Rules, DDoS Protection. Multi-tenant Routing ue
 - [Integration Azure DevOps](md.html?path=integration/azure-devops.md)
 - [Quality Framework](md.html?path=quality/quality.md)
 - [Risk Register](md.html?path=risk/risk.md)
+

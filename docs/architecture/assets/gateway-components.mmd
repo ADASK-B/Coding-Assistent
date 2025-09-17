@@ -1,0 +1,21 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
+```mermaid
+C4Component
+    title Gateway Component Breakdown
+    Container(gateway, "Gateway", "TypeScript")
+    Component(gwAuth, "Auth Service", "Node", "OAuth2, JWT Validation")
+    Component(gwRateLimit, "Rate Limit", "Redis", "Tenant Policies")
+    Component(gwWebhook, "Webhook Handler", "Node", "ADO/GitHub Events")
+    Component(gwRouter, "LLM Router", "Node", "Provider Policies")
+    Component(gwAudit, "Audit Trail", "Node", "Kafka Producer")
+    Rel(gwWebhook, gwRateLimit, "Check quotas")
+    Rel(gwWebhook, gwAuth, "Validate tokens")
+    Rel(gwWebhook, gwRouter, "Dispatch prompts")
+    Rel(gwRouter, gwAudit, "Emit events")
+```

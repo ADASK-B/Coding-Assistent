@@ -1,3 +1,10 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
 # Monitoring & Observability
 
 ## Zweck & Scope
@@ -47,3 +54,4 @@ Stack laeuft in Observability Namespace, GitOps verwaltet Deployment (Helm/Argo)
 - [Health Monitor](md.html?path=monitoring/health-monitor.md)
 - [Operations Runbooks](md.html?path=operations/operations.md)
 - [SLO Framework](md.html?path=slo/slo.md)
+

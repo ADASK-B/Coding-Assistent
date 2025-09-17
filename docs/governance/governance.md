@@ -1,3 +1,10 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
 # Governance Leitfaden
 
 ## Zweck & Scope
@@ -43,3 +50,4 @@ Governance Board trifft sich monatlich, Reviewt ADRs, Roadmap, Risk, Compliance.
 - [Security Framework](md.html?path=security/security.md)
 - [Risk Register](md.html?path=risk/risk.md)
 - [Roadmap](md.html?path=roadmap.md)
+

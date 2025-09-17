@@ -1,3 +1,10 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
 # Security Framework
 
 ## Zweck & Scope
@@ -44,3 +51,4 @@ Security Controls sind in Schichten organisiert: Perimeter (Traefik/WAF), Cluste
 - [Compliance Framework](md.html?path=compliance/compliance.md)
 - [Operations Runbooks](md.html?path=operations/operations.md)
 - [Risk Register](md.html?path=risk/risk.md)
+

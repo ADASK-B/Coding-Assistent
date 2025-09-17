@@ -1,0 +1,29 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
+```mermaid
+sequenceDiagram
+    participant ADO as Azure DevOps
+    participant GW as Gateway
+    participant ORC as Orchestrator
+    participant DEV as Dev Agent
+    participant TEST as Test Agent
+    participant NEON as Neon
+    participant REDIS as Redis
+
+    ADO->>GW: Service Hook (Draft PR Trigger)
+    GW->>ORC: Task Dispatch (Redis Stream entry)
+    ORC->>NEON: Fetch Context
+    ORC->>DEV: Execute Task (Draft PR)
+    DEV->>ADO: Create Branch & Draft PR
+    ORC->>TEST: Run Tests
+    TEST->>ADO: Update Checks
+    ORC->>NEON: Persist Result
+    ORC->>REDIS: Update Queue State
+    ORC->>GW: Completion Event
+    GW->>ADO: Status (Comment / Check)
+```

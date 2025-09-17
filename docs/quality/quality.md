@@ -1,3 +1,10 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
 # Quality Framework
 
 ## Zweck & Scope
@@ -43,3 +50,4 @@ Quality Gates laufen in Pipelines (build -> test -> quality -> deploy). Golden T
 - [Operations Runbooks](md.html?path=operations/operations.md)
 - [Governance Leitfaden](md.html?path=governance/governance.md)
 - [Risk Register](md.html?path=risk/risk.md)
+

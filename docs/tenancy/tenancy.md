@@ -1,3 +1,10 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
 # Multi-Tenant Architektur
 
 ## Zweck & Scope
@@ -43,3 +50,4 @@ Tenant Onboarding erfolgt ueber Self-Service Portal (n8n Flow) mit Approval. Wor
 - [Core Plattform](md.html?path=core/core.md)
 - [Data Layer](md.html?path=data/data.md)
 - [Governance Leitfaden](md.html?path=governance/governance.md)
+

@@ -1,3 +1,10 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
 # Deployment Strategy
 
 ## Zweck & Scope
@@ -43,3 +50,4 @@ Lokale Environments nutzen Compose (`docker-compose up platform`). Staging/Prod 
 - [Operations Runbooks](md.html?path=operations/operations.md)
 - [Quality Framework](md.html?path=quality/quality.md)
 - [Disaster Recovery](md.html?path=dr/dr.md)
+

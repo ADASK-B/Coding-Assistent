@@ -1,3 +1,10 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
 # Evaluation Framework
 
 ## Zweck & Scope
@@ -43,3 +50,4 @@ Evaluation Runner ziehen Model-Versionen und Prompt Configs aus Git. Jobs laufen
 - [Risk Register](md.html?path=risk/risk.md)
 - [ADR 0001](md.html?path=adr/ADR-0001-llm-provider-agnostic.md)
 - [Roadmap](md.html?path=roadmap.md)
+

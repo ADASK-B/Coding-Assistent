@@ -1,0 +1,30 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
+```mermaid
+C4Container
+    title AI Code Agent Platform - Container View
+    Container_Boundary(edge, "Platform Edge") {
+        Container(gateway, "Gateway", "TypeScript", "Webhooks, Auth, Rate Limit")
+        Container(orchestrator, "Orchestrator", "TypeScript", "Workflow Engine, Redis Streams")
+        Container(adapter, "Integration Services", "TypeScript", "ADO/GitHub/GitLab Adapter")
+        Container(monitoring, "Observability", "Helm Stack", "Prometheus/Grafana/Loki/Alertmanager")
+        Container(dataLayer, "Data Layer", "Neon/Redis/Qdrant", "State, Ledger, Queues, Context")
+        Container(health, "Health Monitor", "Node", "Synthetic Checks, Status Page")
+    }
+    Container_Boundary(external, "External Systems") {
+        Container_Ext(ado, "Azure DevOps", "Service Hooks, Repos")
+        Container_Ext(llm, "LLM Providers", "Azure OpenAI, Anthropic, vLLM")
+    }
+    Rel(ado, gateway, "Webhook Event", "HTTPS")
+    Rel(gateway, orchestrator, "Task Dispatch", "Redis Streams")
+    Rel(orchestrator, dataLayer, "Persist State", "SQL/Redis")
+    Rel(orchestrator, adapter, "Invoke Integrations", "gRPC/REST")
+    Rel(orchestrator, llm, "Prompt", "gRPC")
+    Rel(orchestrator, monitoring, "Metrics", "OTel")
+    Rel(health, monitoring, "Dashboards")
+```

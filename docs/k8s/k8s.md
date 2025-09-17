@@ -1,3 +1,10 @@
+---
+Owner: Arthur Schwan
+Last-Reviewed: 2025-09-17
+Next-Review: 2025-12-01
+Version: 1.0
+Status: Approved
+---
 # Kubernetes Migration
 
 ## Zweck & Scope
@@ -43,3 +50,4 @@ Cluster wird per IaC erzeugt, Netzwerk-Segmentation ueber Azure CNI + NetworkPol
 - [Operations Runbooks](md.html?path=operations/operations.md)
 - [Security Framework](md.html?path=security/security.md)
 - [SLO Framework](md.html?path=slo/slo.md)
+
