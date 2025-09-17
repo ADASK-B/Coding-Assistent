@@ -251,28 +251,28 @@
                         <h4>Core Services (8)</h4>
                         <span class="status-badge status-complete">Running</span>
                         <p>Gateway, Orchestrator, Adapter, LLM-Patch, Traefik, ngrok, Ollama, Azurite</p>
-                        <a href="md.html?path=architecture/core-services.md" class="btn">View Details →</a>
+                        <a href="md.html?path=core/core.md" class="btn">View Details →</a>
                     </div>
                     
                     <div class="card">
                         <h4>Monitoring Stack (8)</h4>
                         <span class="status-badge status-complete">Running</span>
                         <p>Grafana, Prometheus, Loki, Alertmanager, cAdvisor, Node Exporter, Health Monitor</p>
-                        <a href="md.html?path=architecture/monitoring-stack.md" class="btn">View Details →</a>
+                        <a href="md.html?path=monitoring/monitoring.md" class="btn">View Details →</a>
                     </div>
                     
                     <div class="card">
                         <h4>🔐 Security Layer</h4>
                         <span class="status-badge status-planned">Architecture Design</span>
                         <p>Enterprise authentication, authorization, audit trails, and zero-trust network security integration.</p>
-                        <a href="md.html?path=architecture/security-framework.md" class="btn">Security Layer →</a>
+                        <a href="md.html?path=security/security.md" class="btn">Security Layer →</a>
                     </div>
                     
                     <div class="card">
                         <h4>🏢 Multi-Tenant Isolation</h4>
                         <span class="status-badge status-planned">Design Phase</span>
                         <p>Data separation, network segmentation, resource quotas, and tenant management architecture.</p>
-                        <a href="md.html?path=architecture/multi-tenancy.md" class="btn">Tenancy Design →</a>
+                        <a href="md.html?path=tenancy/tenancy.md" class="btn">Tenancy Design →</a>
                     </div>
                 </div>
                 
@@ -343,21 +343,21 @@
                         <h4>🔐 Security Architecture</h4>
                         <span class="status-badge status-planned">Framework Design</span>
                         <p>Enterprise security framework with OIDC, RBAC, audit trails, secrets management, and zero-trust networking.</p>
-                        <a href="md.html?path=architecture/security-framework.md" class="btn">Security Design →</a>
+                        <a href="md.html?path=security/security.md" class="btn">Security Design →</a>
                     </div>
                     
                     <div class="card">
                         <h4>🏢 Multi-Tenancy Design</h4>
                         <span class="status-badge status-planned">Architecture Phase</span>
                         <p>Complete tenant isolation architecture for data separation, network segmentation, and resource management.</p>
-                        <a href="md.html?path=architecture/multi-tenancy.md" class="btn">Tenancy Guide →</a>
+                        <a href="md.html?path=tenancy/tenancy.md" class="btn">Tenancy Guide →</a>
                     </div>
                     
                     <div class="card">
                         <h4>📋 Compliance Framework</h4>
                         <span class="status-badge status-planned">Requirements Analysis</span>
                         <p>GDPR, SOX compliance framework with audit trails, data lineage, and regulatory reporting capabilities.</p>
-                        <a href="md.html?path=operations/compliance-framework.md" class="btn">Compliance Guide →</a>
+                        <a href="md.html?path=compliance/compliance.md" class="btn">Compliance Guide →</a>
                     </div>
                 </div>
             </div>
@@ -439,60 +439,85 @@
 
         <!-- Documentation Status -->
         <div class="section">
-            <div class="section-header">📚 Documentation Status</div>
+            <div class="section-header">Documentation Status</div>
             <div class="section-content">
-                <div class="warning-box">
-                    <h4>⚠️ Work in Progress</h4>
-                    <p>Some documentation sections are being developed. Dummy placeholders indicate planned content.</p>
-                </div>
-                
                 <div class="grid">
                     <div class="card">
-                        <h4>Arc42 System Documentation</h4>
-                        <span class="status-badge status-missing">Empty - Planned</span>
-                        <p><strong>Planned Content:</strong> Comprehensive system documentation following arc42 template. Will include requirements, constraints, solution strategy, building blocks, runtime views, deployment views, concepts, design decisions, quality requirements, risks, and glossary.</p>
-                        <a href="md.html?path=design/arc42/README.md" class="btn" style="opacity: 0.6;">Placeholder →</a>
+                        <h4>Core Platform</h4>
+                        <span class="status-badge status-complete">Published</span>
+                        <p>Gateway, Orchestrator, Adapter und Datenfluss.</p>
+                        <a href="md.html?path=core/core.md" class="btn">Core Docs</a>
                     </div>
-                    
                     <div class="card">
-                        <h4>Quality Framework & Testing</h4>
-                        <span class="status-badge status-missing">Missing - Planned</span>
-                        <p><strong>Planned Content:</strong> AI code quality evaluation framework with golden tests, provider comparisons, automated quality gates, and testing strategies for LLM-generated code.</p>
-                        <a href="#" class="btn" style="opacity: 0.6;">Coming Soon →</a>
+                        <h4>Monitoring Stack</h4>
+                        <span class="status-badge status-complete">Published</span>
+                        <p>Prometheus, Grafana, Loki, Alertmanager, Health Monitor.</p>
+                        <a href="md.html?path=monitoring/monitoring.md" class="btn">Monitoring Docs</a>
                     </div>
-                    
                     <div class="card">
-                        <h4>Evaluation Framework</h4>
-                        <span class="status-badge status-missing">Missing - 404</span>
-                        <p><strong>Planned Content:</strong> Systematic evaluation of AI code generation quality, performance benchmarks, provider comparisons, and testing methodologies.</p>
-                        <a href="#" class="btn" style="opacity: 0.6;">Coming Soon →</a>
+                        <h4>Security & Compliance</h4>
+                        <span class="status-badge status-complete">Published</span>
+                        <p>Security Framework, Policies, Compliance Kontrollen.</p>
+                        <a href="md.html?path=security/security.md" class="btn">Security Docs</a>
                     </div>
-                    
                     <div class="card">
-                        <h4>🔐 Enterprise Security Documentation</h4>
-                        <span class="status-badge status-planned">Framework Development</span>
-                        <p><strong>Planned Content:</strong> Complete security documentation including authentication, authorization, audit logging, and compliance procedures.</p>
-                        <a href="md.html?path=operations/enterprise-security.md" class="btn" style="opacity: 0.8;">Security Docs →</a>
+                        <h4>Data & Tenancy</h4>
+                        <span class="status-badge status-complete">Published</span>
+                        <p>Neon, Redis, Multi-Tenant Isolation und Operation.</p>
+                        <a href="md.html?path=data/data.md" class="btn">Data Docs</a>
                     </div>
-                    
                     <div class="card">
-                        <h4>📋 Compliance Reports</h4>
-                        <span class="status-badge status-planned">Requirements Phase</span>
-                        <p><strong>Planned Content:</strong> GDPR, SOX compliance documentation, audit reports, data protection impact assessments, and regulatory frameworks.</p>
-                        <a href="md.html?path=operations/compliance-reports.md" class="btn" style="opacity: 0.8;">Compliance Docs →</a>
+                        <h4>Operations & DR</h4>
+                        <span class="status-badge status-complete">Published</span>
+                        <p>Runbooks, DR Playbooks, SLO Framework.</p>
+                        <a href="md.html?path=operations/operations.md" class="btn">Operations Docs</a>
                     </div>
-                    
                     <div class="card">
-                        <h4>🏢 Multi-Tenant Operations</h4>
-                        <span class="status-badge status-planned">Design Phase</span>
-                        <p><strong>Planned Content:</strong> Tenant management procedures, isolation verification, resource monitoring, and operational runbooks for multi-tenant deployment.</p>
-                        <a href="md.html?path=operations/multi-tenant-ops.md" class="btn" style="opacity: 0.8;">Operations Guide →</a>
+                        <h4>Quality & Evaluation</h4>
+                        <span class="status-badge status-complete">Published</span>
+                        <p>Quality Gates, Benchmarks, Evaluation Pipeline.</p>
+                        <a href="md.html?path=quality/quality.md" class="btn">Quality Docs</a>
+                    </div>
+                    <div class="card">
+                        <h4>Governance & Risk</h4>
+                        <span class="status-badge status-complete">Published</span>
+                        <p>Governance Modell, Risk Register, Roadmap.</p>
+                        <a href="md.html?path=governance/governance.md" class="btn">Governance Docs</a>
+                    </div>
+                    <div class="card">
+                        <h4>Architecture & ADRs</h4>
+                        <span class="status-badge status-complete">Published</span>
+                        <p>C4 Modelle, ADR Index und Decisions.</p>
+                        <a href="md.html?path=adr/README.md" class="btn">Architecture Docs</a>
+                    </div>
+                    <div class="card">
+                        <h4>APIs & Integrationen</h4>
+                        <span class="status-badge status-complete">Published</span>
+                        <p>Gateway APIs, Rate Limits und Azure DevOps Webhooks.</p>
+                        <a href="md.html?path=api/api.md" class="btn">API Docs</a>
+                    </div>
+                    <div class="card">
+                        <h4>Deployment & K8s</h4>
+                        <span class="status-badge status-complete">Published</span>
+                        <p>Compose Setup, GitOps Deployments, Kubernetes Migration.</p>
+                        <a href="md.html?path=deployment/deployment.md" class="btn">Deployment Docs</a>
+                    </div>
+                    <div class="card">
+                        <h4>Setup & Requirements</h4>
+                        <span class="status-badge status-complete">Published</span>
+                        <p>Quick Setup Guide, Systemvoraussetzungen, Beispiele.</p>
+                        <a href="md.html?path=setup/setup.md" class="btn">Setup Guide</a>
+                    </div>
+                    <div class="card">
+                        <h4>Examples & Glossary</h4>
+                        <span class="status-badge status-complete">Published</span>
+                        <p>Usage Examples, Glossar und Lernressourcen.</p>
+                        <a href="md.html?path=examples/examples.md" class="btn">Examples</a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Development Resources -->
+<!-- Development Resources -->
         <div class="section">
             <div class="section-header">💻 Development Resources</div>
             <div class="section-content">
@@ -508,7 +533,7 @@
                         <h4>Operational Documentation</h4>
                         <span class="status-badge status-complete">Complete</span>
                         <p>Detailed startup procedures, health verification, troubleshooting, and system maintenance guides.</p>
-                        <a href="AgentsMd/Initialisierung/Agents.md" class="btn">Operations Guide →</a>
+                        <a href="md.html?path=operations/operations.md" class="btn">Operations Guide →</a>
                     </div>
                 </div>
             </div>
